@@ -1,6 +1,6 @@
-package implementation;
+package implementation.linkedlist;
 
-public class LinkedList {
+public class MyLinkedList {
 
     // this can be thought of as an isolated memory unit,
     // having data and pointing to the next isolated memory unit
@@ -17,7 +17,7 @@ public class LinkedList {
     Node head;  // head refers to the first node in a linked list
 
     // Method to insert a new node
-    public static LinkedList insert(LinkedList list, int data) {
+    public static MyLinkedList insert(MyLinkedList list, int data) {
         // Create a new node with given data
         Node newNode = new Node(data);
         newNode.next = null;
@@ -43,7 +43,7 @@ public class LinkedList {
     }
 
     // Method to print the LinkedList.
-    public static void printList(LinkedList list) {
+    public static void printList(MyLinkedList list) {
         Node currNode = list.head;
 
         System.out.print("LinkedList: ");
@@ -63,7 +63,7 @@ public class LinkedList {
     // **************DELETION BY KEY**************
 
     // Method to delete a node in the LinkedList by KEY
-    public static LinkedList deleteByKey(LinkedList list, int key) {
+    public static MyLinkedList deleteByKey(MyLinkedList list, int key) {
         // Store head node
         Node currNode = list.head, prev = null;
 
@@ -125,7 +125,7 @@ public class LinkedList {
 
     public static void main(String[] args) {
         /* Start with the empty list. */
-        LinkedList list = new LinkedList();
+        MyLinkedList list = new MyLinkedList();
 
         list = insert(list, 1);
         list = insert(list, 2);

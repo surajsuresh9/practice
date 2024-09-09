@@ -1,6 +1,4 @@
-package implementation;
-
-import java.util.LinkedList;
+package practice;
 
 public class LinkedList_1 {
     public static void main(String[] args) {
